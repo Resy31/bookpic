@@ -1,0 +1,19 @@
+<div class="contents row">
+  <div class="container">
+    <h3>投稿</h3>
+    <%= form_with(model: @post, local: true) do |form| %>
+      <%= form.text_field :bookname, placeholder: "本の名前" %>
+      <div class="click-upload">
+        <div id="image-list">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= form.file_field :images, name: 'item[images][]', id:"item-image" %>
+        </div>
+      </div>
+      <%= form.text_area :story, placeholder: "ストーリー", rows: "3" %>
+      <%= form.text_area :text, placeholder: "本の紹介や感想（ネタバレ禁止!!）", rows: "4" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
