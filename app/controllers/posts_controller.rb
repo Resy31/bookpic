@@ -12,9 +12,14 @@ class PostsController < ApplicationController
     Post.create(post_params)
   end
 
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+  end
+
   private
   def post_params
-    params.require(:post).permit(:bookname, :auther, :image, :text, :story )
+    params.require(:post).permit(:bookname, :author, :image, :text, :story )
   end
 
 end

@@ -568,6 +568,7 @@ header.header div.header__bar.row div.grid-6 a.post {
   font-size: 14px;
   border: 2px solid #C0C0C0;
   color: #C0C0C0;
+  background-color: #990033;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -576,8 +577,9 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #FFF	;
   color: #FFF	;
+  border: 2px solid #fff;
+
 }
 
 .title {
@@ -769,15 +771,15 @@ div.contents.row div.content_post .more ul.more_list {
   width: 80px;
   right: 0;
   font-size: 12px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #990033;
+  border: 1px solid #C0C0C0;
   display: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
 div.contents.row div.content_post .more ul.more_list li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #C0C0C0;
 }
 
 div.contents.row div.content_post .more ul.more_list li:last-child {
@@ -790,8 +792,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
-  color: #fff;
+  color: #ffffff;
 }
 
 div.contents.row div.content_post p {
@@ -840,6 +841,7 @@ div.contents.row .success {
 
 div.contents.row .success h3 {
   margin: 10px auto;
+  color: #666666;
 }
 
 form input,

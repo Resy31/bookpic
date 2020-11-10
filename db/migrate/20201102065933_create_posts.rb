@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
   def change
     create_table :posts do |t|
       t.string  :bookname,        null: false
-      t.string  :auther,          null: false
+      t.string  :author,          null: false
       t.text    :image,           null: false
       t.string  :text,            null: false
       t.string  :story,           null: false
