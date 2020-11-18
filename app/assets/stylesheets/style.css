@@ -514,7 +514,7 @@ body {
   line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: #C0C0C0;
+  color: #444;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
@@ -857,7 +857,7 @@ form textarea {
 form input[type="submit"] {
   background-color: #990033;
   border-radius: 20px;
-  color: #C0c0c0;
+  color: #C0C0C0;
   border: 0;
   font-size: 18px;
 }
@@ -883,12 +883,12 @@ form input[type="submit"]:hover {
 }
 
 .comments {
-  padding: 5px;
+  padding: 15px;
   margin-top: 15px;
 }
 
 .comments a {
-  color: #57C3E9;
+  color: #990033;
 }
 
 .comments a:hover {
