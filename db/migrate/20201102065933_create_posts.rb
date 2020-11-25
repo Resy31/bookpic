@@ -3,7 +3,6 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.string  :bookname,        null: false
       t.string  :author,          null: false
-      t.text    :image,           null: false
       t.string  :text,            null: false
       t.string  :story,           null: false
       # t.integer :category_id,     null: false
