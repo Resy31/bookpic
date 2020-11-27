@@ -2,24 +2,30 @@
   <div class="item-box">
       <%= image_tag @post.image.variant(resize: '300x500'),class:"item-box-img" %>
   </div>
-      <table class="detail-table">
-      <tbody>
-        <tr>
-          <th class="detail-item">タイトル</th>
-          <td class="detail-value"><%= @post.bookname %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">著者名</th>
-          <td class="detail-value"><%= @post.author %></td>
-        </tr>
-          <th class="detail-item">ストーリー</th>
-          <td class="detail-value"><%= @post.story %></td>
-        </tr>
-          <th class="detail-item">紹介・感想</th>
-          <td class="detail-value"><%= @post.text %></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="user-btn">
+    <% if user_signed_in? && current_user.id == @post.user_id %>
+      <%= link_to '編集', edit_post_path(@post), method: :get, class: "edit-btn" %>
+      <%= link_to '削除', post_path(@post), method: :delete, class:'destroy-btn' %>
+    <% end %>
+  </div>
+  <table class="detail-table">
+    <tbody>
+      <tr>
+        <th class="detail-item">タイトル</th>
+        <td class="detail-value"><%= @post.bookname %></td>
+      </tr>
+      <tr>
+        <th class="detail-item">著者名</th>
+        <td class="detail-value"><%= @post.author %></td>
+       </tr>
+        <th class="detail-item">ストーリー</th>
+        <td class="detail-value"><%= @post.story %></td>
+      </tr>
+        <th class="detail-item">紹介・感想</th>
+        <td class="detail-value"><%= @post.text %></td>
+      </tr>
+    </tbody>
+  </table>
   <div class="container">
     <% if user_signed_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
