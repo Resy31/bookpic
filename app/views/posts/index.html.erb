@@ -3,7 +3,22 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 <div class="contents row">
-  <% @posts.each do |post| %>
-    <%= render partial: "post", locals: { post: post } %>
-  <% end %>
+  <ul class='book-lists'>
+    <% @posts.each do |post| %>
+    <li class='list'>
+      <%= link_to post_path(post.id), method: :get do %>
+        <%= image_tag post.image, class: "book-img"%>
+        <%= render partial: "post", locals: { post: post } %>
+      <% end %>
+        <div class='book-info'>
+          <div class='book-name'>
+            <span>タイトル : <%= post.bookname %></span>
+          </div>
+          <div class='book-author'>
+            <span>著者名 : <%= post.author %></span>
+          </div>
+        </div>
+    </li>
+    <% end %>
+  </ul>
 </div>
