@@ -1,7 +1,8 @@
     <%= form_with(model: post, local: true) do |form| %>
-      <%= form.text_field :bookname, placeholder: "本の名前" %>
-      <%= form.text_field :author, placeholder: "作者" %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.text_field :bookname, placeholder: "タイトル" %>
+      <%= form.text_field :author, placeholder: "著者名" %>
+        <p>クリックしてファイルをアップロード</p>
+      <%= form.file_field :image, placeholder: "", id:"book-image" %>
       <%= form.text_area :story, placeholder: "ストーリー", rows: "3" %>
       <%= form.text_area :text, placeholder: "本の紹介や感想（ネタバレ禁止!!）", rows: "4" %>
       <%= form.submit "SEND" %>

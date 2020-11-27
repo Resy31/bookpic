@@ -329,7 +329,7 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 660px;
+  max-width: 900px;
   *zoom: 1;
 }
 
@@ -514,7 +514,7 @@ body {
   line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: #444;
+  color: #C0C0C0;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
@@ -719,37 +719,6 @@ div.contents.row .new_user {
   font-family: "游ゴシック", "YuGothic";
 }
 
-div.contents.row div.content_post {
-  margin: 20px 0;
-  padding: 30px;
-  position: relative;
-  height: 400px;
-  color: #fff;
-  background-size: cover;
-  background-position: center center;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-}
-
-div.contents.row div.content_post:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FFA60000');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(62%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.85)));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.85) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.85) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.85) 100%);
-  z-index: 1;
-  border-radius: 3px;
-}
-
 div.contents.row div.content_post .more {
   position: absolute;
   cursor: pointer;
@@ -917,4 +886,98 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+.item-box {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-box-img {
+  height: 70vh;
+  width: 100%;
+  padding: 30px 0;
+  min-height: 500px;
+  object-fit: contain;
+}
+.detail-table {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.detail-item {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #C0C0C0;
+  color: #888;
+  font-size: 17px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #C0C0C0;
+  color: #666;
+  font-size: 17px;
+}
+
+.book-img {
+  width: 100%;
+  height: 55vh;
+}
+
+.book-lists {
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.book-lists>.list {
+  width: 50%;
+  padding: 2vw;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.book-info {
+  margin: 5px;
+  color: #000;
+  font-size: 20px;
+}
+
+.user-btn {
+  width: 100%;
+  margin-bottom: 3vh;
+  text-align: center;
+  flex-direction:row;
+}
+
+.edit-btn {
+  background-color: #990033;
+  font-size: 24px;
+  color: #C0C0C0;
+  padding: 10px 80px;
+  margin: 0 60px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+
+}
+
+.destroy-btn {
+  background-color: lightgray;
+  font-size: 24px;
+  color: black;
+  padding: 10px 80px;
+  margin: 0 60px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
 }
