@@ -329,7 +329,7 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 660px;
+  max-width: 900px;
   *zoom: 1;
 }
 
@@ -719,7 +719,7 @@ div.contents.row .new_user {
   font-family: "游ゴシック", "YuGothic";
 }
 
-div.contents.row div.content_post {
+/* div.contents.row div.content_post {
   margin: 20px 0;
   padding: 30px;
   position: relative;
@@ -730,8 +730,8 @@ div.contents.row div.content_post {
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
 }
-
-div.contents.row div.content_post:after {
+ */
+/* div.contents.row div.content_post:after {
   content: '';
   position: absolute;
   top: 0;
@@ -748,7 +748,7 @@ div.contents.row div.content_post:after {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.85) 100%);
   z-index: 1;
   border-radius: 3px;
-}
+} */
 
 div.contents.row div.content_post .more {
   position: absolute;
@@ -917,4 +917,68 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+.item-box {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-box-img {
+  height: 70vh;
+  width: 100%;
+  padding: 30px 0;
+  min-height: 500px;
+  object-fit: contain;
+}
+.detail-table {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.detail-item {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #C0C0C0;
+  color: #888;
+  font-size: 17px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #C0C0C0;
+  color: #666;
+  font-size: 17px;
+}
+
+.book-img {
+  width: 100%;
+  height: 55vh;
+}
+
+.book-lists {
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.book-lists>.list {
+  width: 50%;
+  padding: 2vw;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.book-info {
+  margin: 5px;
+  color: #000;
+  font-size: 20px;
 }
