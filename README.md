@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##アプリ名　bookpic  
 
-Things you may want to cover:
+##概要  
 
-* Ruby version
+##本番環境  
 
-* System dependencies
+##制作背景  
 
-* Configuration
+##DEMO  
 
-* Database creation
+##工夫したポイント  
 
-* Database initialization
+##使用技術  
 
-* How to run the test suite
+##今後の実装  
 
-* Services (job queues, cache servers, search engines, etc.)
+##DB設計
 
-* Deployment instructions
 
-* ...
+
+★概要(このアプリでできることを書いて下さい)
+★本番環境(デプロイ先　テストアカウント＆ID)
+★制作背景(意図)
+★DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
+・工夫したポイント
+・使用技術(開発環境)
+・課題や今後実装したい機能
+★DB設計
