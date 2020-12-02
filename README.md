@@ -21,7 +21,7 @@ http://18.182.134.200/
 テスト用アカウント  
 アドレス名:test@jp  
 パスワード:test11  
-Githubリポジトリ:  
+Githubリポジトリ:https://github.com/Resy31/bookpic.git  
 
 
 ### 制作背景  
