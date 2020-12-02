@@ -2,6 +2,7 @@
 
 ### アプリ名　
 bookpic  
+GIF:https://i.gyazo.com/9eed49f08d6f910a407561f58d740d3b.mp4  
 
 
 ### 概要  
