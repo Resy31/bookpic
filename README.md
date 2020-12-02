@@ -1,7 +1,6 @@
 # README
 
-### アプリ名　
-bookpic  
+### アプリ名　bookpic 
 GIF:https://i.gyazo.com/9eed49f08d6f910a407561f58d740d3b.mp4  
 ![サンプル](8aa34c77deb749af0b5aca45147f2251.jpg)
 
